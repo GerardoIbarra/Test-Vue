@@ -1,41 +1,49 @@
-# vue-test
+Test Técnico  
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+Para este ejercicio será necesario que realices una serie de componentes para demostrar tus habilidades lógicas y creativas. Tendrás que realizar una propuesta con buena presentación y que sea atractiva para los usuarios.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Cada uno de los componentes deberá estar en una ruta independiente, accesible mediante un menú principal.
 
-## Customize configuration
+Tecnologías requeridas : Vue 3, Boostrap y Axios.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Login
+Crea una pagina de login haciendo una llamada GET a la api: https://mocki.io/v1/3e408794-39ed-4c75-bb6e-c49c578de293 
 
-## Project Setup
+successData:
+  User: “HMHuser”
+  pass: “techTest”
 
-```sh
-npm install
-```
+1.-El password se deberá codificar en MD5 y se considerará loginSuccess, cuando los datos ingresados coincidan con la respuesta de la api.
+2.-Se deberá almacenar una cookie para saber si el usuario tiene sesión.
+3.-Solo la página de Login deberá ser pública. Todas las demás requieren loginSuccess
 
-### Compile and Hot-Reload for Development
+Todo list
+Crea un componente que muestre una lista de tareas. { id: idUnico, title : ‘’’, done:false}
 
-```sh
-npm run dev
-```
+1.-Se debe poder crear nuevas tareas.
+2.-Cada tarea deberá poderse eliminar o modificar.
+3.-Haciendo uso de variables computadas, deberá mostrar las tareas ordenando primero las que se encuentren en estatus pendiente
+4.-Deberá mostrar un identificador gráfico que indique si está completada
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
+Timer
+Crea un componente que muestre un temporizador. 
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+1.-Deberá recibir la duración en segundos y deberá actualizar en tiempo real el contador con formato "HH:MM:SS". 
+2.-Deberá poderse Iniciar, Pausar y Limpiar
+3.-Emitir todos los eventos personalizados que se requieran.
 
-```sh
-npm run test:unit
-```
+Git Profile
 
-### Lint with [ESLint](https://eslint.org/)
+Api: https://api.github.com/users/{username}
 
-```sh
-npm run lint
-```
+Crea un componente que muestre el perfil de un usuario de GitHub mediante una búsqueda.
+
+El componente debe tener las siguientes características:
+
+1.-Deberá existir un input “Buscador” para buscar los perfiles
+2.-Se deberá mostrar la información más relevante del perfil
+3.-Deberá contar con manejo de errores (si el usuario no existe)
+
+
